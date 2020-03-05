@@ -12,7 +12,6 @@ tags:
 - art-of-computer-programming
 - deep-neural-network
 - computer-science
-- donald-knuth
 ---
 
 Writing...

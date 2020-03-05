@@ -1,0 +1,25 @@
+<div class="show-comments">
+    <button class="disqus-button" id="show-comments-button" onclick="jc();return false;">Leave a comment</button>
+</div>
+
+<div id="jc" data-allowguests="true" class="just-comments" data-apikey=""></div>
+
+
+<script>
+var disqus_loaded = false;
+var jc_dapikey = 'd1351b1e-5501-4ee2-999e-88094ce6e288';
+function jc() {
+  if (!disqus_loaded)  {
+      disqus_loaded = true;
+      var e = document.createElement("script");
+      e.type = "text/javascript";
+      e.async = true;
+      e.src = "https://just-comments.com/w2.js";
+      (document.getElementsByTagName("head")[0] ||
+      document.getElementsByTagName("body")[0])
+      .appendChild(e);
+      document.getElementById("jc").setAttribute("data-apikey", jc_dapikey)
+      document.getElementById("show-comments-button").style.display = "none";
+  }
+}
+</script>

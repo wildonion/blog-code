@@ -1,0 +1,67 @@
+title: uniXerr blog
+logo:  # you can add own logo like : unixerr.png
+description: University Without Error, uniXerr, Artificial Intelligence, CS, computer science, deep learning, neural network
+baseurl: "/blog" # the subpath of your site, e.g. /blog
+url: "https://unixerr.com" # the base hostname & protocol for your site, e.g. http://example.com
+
+
+# Author Settings
+author:
+  name: Erfan Arefi
+  image: '/assets/img/me.jpg'
+  job: Computer Scientist
+  bio: Founder of uniXerr
+  email: ea_pain@yahoo.com
+
+
+# Contact links
+contact:
+  - name: Twitter
+    link: https://twitter.com/WObyEA
+  - name: Linkedin
+    link: https://www.linkedin.com/in/mohammaderfan-arefimoghaddam-750009121/
+  - name: Telegram
+    link: https://t.me/wildonion
+  - name: Github
+    link: https://github.com/wildonion
+
+
+# Google Analytics
+google-analytics: UA-155278511-1
+
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+plugins:
+  - jekyll-sitemap
+  - jekyll/tagging
+  - jekyll-seo-tag
+  - jekyll-admin
+  - jemoji
+
+# Pages Path
+defaults:
+  - scope:
+      path: '_pages'
+    values:
+      permalink: /:basename:output_ext
+
+include:
+  - _pages
+
+# Tags
+tag_page_dir:         tag
+tag_page_layout:      tag-page
+tag_permalink_style:  pretty
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+
+# Exclude from processing.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
